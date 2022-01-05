@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Gize Car Locker Utility'

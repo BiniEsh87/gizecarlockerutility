@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.marozzi.roundbutton.RoundButton
+            android:id="@+id/lock_btn"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="Lock"
+            app:rb_animation_alpha="false"
+            app:rb_animation_corner_radius="30dp"
+            app:rb_animation_duration="500"
+            app:rb_animation_progress_color="@color/colorAccent"
+            app:rb_animation_progress_padding="8dp"
+            app:rb_animation_progress_style="circle"
+            app:rb_animation_progress_width="2dp"
+            app:rb_background_color="@android:color/transparent"
+            app:rb_background_color_pressed="@color/colorPrimary"
+            app:rb_corner_color="@color/colorPrimary"
+            app:rb_corner_color_pressed="@color/colorPrimary"
+            app:rb_corner_radius="2dp"
+            app:rb_corner_width="1dp"
+            app:rb_success_resource="@drawable/ic_done_white_48dp"
+            app:rb_text_color="@color/colorPrimary"
+            app:rb_text_color_pressed="@android:color/white"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <com.marozzi.roundbutton.RoundButton
+            android:id="@+id/unlock_btn"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="Unlock"
+            app:rb_animation_alpha="false"
+            app:rb_animation_corner_radius="20dp"
+            app:rb_animation_duration="500"
+            app:rb_animation_progress_color="@color/colorAccent"
+            app:rb_animation_progress_padding="8dp"
+            app:rb_animation_progress_style="circle"
+            app:rb_animation_progress_width="2dp"
+            app:rb_background_color="@android:color/transparent"
+            app:rb_background_color_pressed="@color/colorPrimary"
+            app:rb_corner_color="@color/colorPrimary"
+            app:rb_corner_color_pressed="@color/colorPrimary"
+            app:rb_corner_radius="2dp"
+            app:rb_corner_width="1dp"
+            app:rb_success_resource="@drawable/ic_done_white_48dp"
+            app:rb_text_color="@color/colorPrimary"
+            app:rb_text_color_pressed="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:clipToPadding="true"
+        android:orientation="vertical">
+
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/rotateloading"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:loading_color="#050505"
+            app:loading_width="10dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Designed and Developed by bini 0920200987" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:text="SMS Status: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#424240" />
+
+        <TextView
+            android:id="@+id/message_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:text="No message was sent yet."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/delivery_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:text="Not Delivered Yet"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+</LinearLayout>

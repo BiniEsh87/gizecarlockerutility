@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_gradient_animation_list"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topspace"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textinfocontainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="121dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/rounded_edittext"
+            android:clickable="false"
+            android:textSize="15dp"
+            android:inputType="none"
+            android:gravity="center"
+            android:text="M2M\nNumber: "
+            android:textColor="#090808" />
+
+        <EditText
+            android:id="@+id/sim_number"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:focusedByDefault="true"
+            android:hint="Simcard Number"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middlespacing1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/savebuttoncontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="301dp"
+            android:layout_height="87dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:layout_weight="1"
+            android:shadowColor="#FF8A65"
+            android:text="SAVE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middlespacing2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/longtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="159dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Type M2M number and save to start. for more info about design call 0920200987 binishare"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/gize_white_transparent" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+    </LinearLayout>
+</LinearLayout>
